@@ -1,0 +1,22 @@
+{
+  "name": "kingdom-snacks",
+  "version": "1.0.0",
+  "description": "Full-stack e-commerce platform for Kingdom Snacks - Musanze, Kigali, Rwanda",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "client:dev": "cd client && npm run dev",
+    "server:dev": "cd server && npm run dev",
+    "client:build": "cd client && npm run build",
+    "server:build": "cd server && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "npm run client:build && npm run server:build"
+  },
+  "keywords": ["kingdom-snacks", "e-commerce", "rwanda", "musanze", "kigali"],
+  "author": "Kingdom Snacks",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
