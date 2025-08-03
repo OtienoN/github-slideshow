@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place your order with Eden Royal Prints and Color Solutions. Easy online ordering for printing, digital services, ICT solutions, and government services in Kenya.">
+    <meta name="keywords" content="order printing services, place order kenya, online printing order, digital services order, eCitizen services order">
+    <meta name="author" content="Eden Royal Prints and Color Solutions">
+    
+    <title>Place Your Order - Eden Royal Prints and Color Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ER</div>
+                Eden Royal Prints
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn btn-primary active">Order Now</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1>Place Your <span style="color: var(--gold);">Order</span></h1>
+                <p class="hero-tagline">Fast, easy, and secure ordering process. Get your project started in minutes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Process Steps -->
+    <section class="section-small" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="text-center mb-8 fade-in-up">
+                <h2>Simple 3-Step Process</h2>
+                <p class="text-gray-600">From order to delivery in just a few clicks</p>
+            </div>
+            
+            <div class="grid grid-3 fade-in-up">
+                <div class="text-center">
+                    <div class="card-icon mx-auto" style="background: var(--gold);">
+                        <span style="font-weight: bold; font-size: 1.5rem;">1</span>
+                    </div>
+                    <h4 class="mt-4 mb-2">Fill Order Form</h4>
+                    <p class="text-gray-600">Provide project details and upload files</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="card-icon mx-auto" style="background: var(--gold);">
+                        <span style="font-weight: bold; font-size: 1.5rem;">2</span>
+                    </div>
+                    <h4 class="mt-4 mb-2">Get Quote & Confirm</h4>
+                    <p class="text-gray-600">Receive instant quote and confirm order</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="card-icon mx-auto" style="background: var(--gold);">
+                        <span style="font-weight: bold; font-size: 1.5rem;">3</span>
+                    </div>
+                    <h4 class="mt-4 mb-2">Receive Your Order</h4>
+                    <p class="text-gray-600">Pick up or get delivery at your location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3 gap-8">
+                <!-- Main Order Form -->
+                <div class="col-span-2 fade-in-up">
+                    <div class="card">
+                        <h3 class="mb-6">Order Details</h3>
+                        
+                        <form id="order-form">
+                            <!-- Personal Information -->
+                            <div class="mb-8">
+                                <h4 class="mb-4 text-royal-blue">Personal Information</h4>
+                                <div class="grid grid-2 gap-4">
+                                    <div class="form-group">
+                                        <label for="full-name" class="form-label">Full Name *</label>
+                                        <input type="text" id="full-name" name="name" class="form-input" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" id="email" name="email" class="form-input" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-2 gap-4">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="location" class="form-label">Location/Address</label>
+                                        <input type="text" id="location" name="location" class="form-input" placeholder="For delivery purposes">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service Selection -->
+                            <div class="mb-8">
+                                <h4 class="mb-4 text-royal-blue">Service Category</h4>
+                                <div class="form-group">
+                                    <label for="service-category" class="form-label">Select Service Category *</label>
+                                    <select id="service-category" name="service" class="form-select" required>
+                                        <option value="">Choose your service</option>
+                                        <option value="design-printing">🎨 Design & Printing</option>
+                                        <option value="government-services">🏛️ Government & eCitizen Services</option>
+                                        <option value="ict-academic">💻 ICT & Academic Services</option>
+                                        <option value="technical-repair">🔧 Technical & Repair Services</option>
+                                        <option value="digital-services">📷 Digital Services</option>
+                                        <option value="cyber-services">🌐 Cyber & Online Services</option>
+                                    </select>
+                                </div>
+
+                                <!-- Specific Service Options (Dynamic) -->
+                                <div class="form-group" id="specific-service-group" style="display: none;">
+                                    <label for="specific-service" class="form-label">Specific Service *</label>
+                                    <select id="specific-service" name="specific_service" class="form-select">
+                                        <option value="">Select specific service</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Project Details -->
+                            <div class="mb-8">
+                                <h4 class="mb-4 text-royal-blue">Project Details</h4>
+                                
+                                <div class="form-group">
+                                    <label for="project-title" class="form-label">Project Title</label>
+                                    <input type="text" id="project-title" name="project_title" class="form-input" placeholder="Brief title for your project">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="description" class="form-label">Project Description *</label>
+                                    <textarea id="description" name="description" class="form-textarea" rows="4" placeholder="Describe your project requirements, specifications, colors, sizes, quantities, etc..." required></textarea>
+                                </div>
+                                
+                                <div class="grid grid-3 gap-4">
+                                    <div class="form-group">
+                                        <label for="quantity" class="form-label">Quantity</label>
+                                        <input type="number" id="quantity" name="quantity" class="form-input" min="1" placeholder="e.g., 50">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="size" class="form-label">Size/Dimensions</label>
+                                        <input type="text" id="size" name="size" class="form-input" placeholder="e.g., A4, Large, XL">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="colors" class="form-label">Colors</label>
+                                        <input type="text" id="colors" name="colors" class="form-input" placeholder="e.g., Red, Blue, Multi-color">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- File Upload -->
+                            <div class="mb-8">
+                                <h4 class="mb-4 text-royal-blue">File Upload</h4>
+                                
+                                <div class="form-group">
+                                    <label for="files" class="form-label">Upload Files (Optional)</label>
+                                    <input type="file" id="files" name="files" class="form-input form-file" multiple accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.ai,.psd">
+                                    <p class="text-sm text-gray-500 mt-1">Supported formats: JPG, PNG, PDF, DOC, DOCX, AI, PSD (Max 10MB per file)</p>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="file-description" class="form-label">File Description</label>
+                                    <textarea id="file-description" name="file_description" class="form-textarea" rows="2" placeholder="Describe the uploaded files or provide special instructions..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Timeline and Delivery -->
+                            <div class="mb-8">
+                                <h4 class="mb-4 text-royal-blue">Timeline & Delivery</h4>
+                                
+                                <div class="grid grid-2 gap-4">
+                                    <div class="form-group">
+                                        <label for="deadline" class="form-label">Required Completion Date</label>
+                                        <input type="date" id="deadline" name="deadline" class="form-input">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="urgency" class="form-label">Urgency Level</label>
+                                        <select id="urgency" name="urgency" class="form-select">
+                                            <option value="standard">Standard (2-3 days)</option>
+                                            <option value="urgent">Urgent (24 hours) - +30% fee</option>
+                                            <option value="express">Express (Same day) - +50% fee</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="delivery-method" class="form-label">Delivery Method</label>
+                                    <select id="delivery-method" name="delivery_method" class="form-select">
+                                        <option value="pickup">Pick up from our office (Free)</option>
+                                        <option value="delivery-nairobi">Delivery within Nairobi (KSh 200-500)</option>
+                                        <option value="delivery-outskirts">Delivery outside Nairobi (Quote on request)</option>
+                                        <option value="courier">Courier service (Customer pays)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Additional Information -->
+                            <div class="mb-8">
+                                <h4 class="mb-4 text-royal-blue">Additional Information</h4>
+                                
+                                <div class="form-group">
+                                    <label for="budget" class="form-label">Budget Range (Optional)</label>
+                                    <select id="budget" name="budget" class="form-select">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-1000">Under KSh 1,000</option>
+                                        <option value="1000-5000">KSh 1,000 - 5,000</option>
+                                        <option value="5000-10000">KSh 5,000 - 10,000</option>
+                                        <option value="10000-25000">KSh 10,000 - 25,000</option>
+                                        <option value="over-25000">Over KSh 25,000</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="special-instructions" class="form-label">Special Instructions</label>
+                                    <textarea id="special-instructions" name="special_instructions" class="form-textarea" rows="3" placeholder="Any special requirements, preferences, or notes for your order..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="flex items-center gap-3">
+                                        <input type="checkbox" name="newsletter" class="rounded">
+                                        <span>Subscribe to our newsletter for updates and special offers</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-lg w-full" data-original-text="Submit Order Request">
+                                <i class="fas fa-paper-plane mr-2"></i>Submit Order Request
+                            </button>
+                            
+                            <p class="text-sm text-gray-500 mt-4 text-center">
+                                By submitting this order, you agree to our terms and conditions. You will receive a quote within 2 hours during business hours.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Order Summary and Help -->
+                <div class="fade-in-up">
+                    <!-- Quick Quote Calculator -->
+                    <div class="card mb-6">
+                        <h4 class="mb-4">Quick Price Estimate</h4>
+                        <div id="price-calculator">
+                            <div class="form-group">
+                                <label class="form-label">Service Type</label>
+                                <select id="calc-service" class="form-select">
+                                    <option value="">Select service</option>
+                                    <option value="tshirt" data-price="500">T-shirt Printing</option>
+                                    <option value="business-card" data-price="50">Business Cards</option>
+                                    <option value="poster" data-price="100">Poster A4</option>
+                                    <option value="kra-pin" data-price="200">KRA PIN</option>
+                                    <option value="cv-writing" data-price="500">CV Writing</option>
+                                    <option value="passport-photo" data-price="200">Passport Photos</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="number" id="calc-quantity" class="form-input" min="1" value="1">
+                            </div>
+                            
+                            <div class="bg-gray-100 p-4 rounded mt-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold">Estimated Total:</span>
+                                    <span class="text-royal-blue font-bold text-lg" id="estimated-price">KSh 0</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">*Estimate only. Final price may vary based on specifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="card mb-6">
+                        <h4 class="mb-4">Need Help?</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-phone text-royal-blue"></i>
+                                <div>
+                                    <p class="font-semibold">Call Us</p>
+                                    <p class="text-sm text-gray-600">+254 700 000 000</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-3">
+                                <i class="fab fa-whatsapp text-green-500"></i>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <p class="text-sm text-gray-600">Quick responses 24/7</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-envelope text-royal-blue"></i>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p class="text-sm text-gray-600">info@edenroyalprints.co.ke</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Services -->
+                    <div class="card">
+                        <h4 class="mb-4">Popular Services</h4>
+                        <div class="space-y-2">
+                            <a href="#" class="block text-sm text-royal-blue hover:underline">• Custom T-shirt Printing</a>
+                            <a href="#" class="block text-sm text-royal-blue hover:underline">• Business Card Design</a>
+                            <a href="#" class="block text-sm text-royal-blue hover:underline">• KRA PIN Registration</a>
+                            <a href="#" class="block text-sm text-royal-blue hover:underline">• CV Writing & Formatting</a>
+                            <a href="#" class="block text-sm text-royal-blue hover:underline">• Passport Photography</a>
+                            <a href="#" class="block text-sm text-royal-blue hover:underline">• eCitizen Services</a>
+                        </div>
+                        
+                        <a href="services.html" class="btn btn-secondary w-full mt-4">View All Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eden Royal Prints</h3>
+                    <p>Your premier partner for printing, digital services, and ICT solutions in Kenya. Quality you can trust, service you can rely on.</p>
+                    
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="order.html">Order Now</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="services.html#design-printing">T-shirt Printing</a>
+                        <a href="services.html#design-printing">Business Cards</a>
+                        <a href="services.html#government-cyber">eCitizen Services</a>
+                        <a href="services.html#ict-digital">Online Applications</a>
+                        <a href="services.html#technical-repair">PC Repairs</a>
+                        <a href="services.html#digital-services">Digital Photography</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--gold);"></i>
+                            <span>Sample Street, Nairobi, Kenya</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-phone" style="color: var(--gold);"></i>
+                            <span>+254 700 000 000</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope" style="color: var(--gold);"></i>
+                            <span>info@edenroyalprints.co.ke</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-clock" style="color: var(--gold);"></i>
+                            <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eden Royal Prints and Color Solutions. All rights reserved. | Designed with ❤️ for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-btn" data-phone="254700000000" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Order Form JavaScript -->
+    <script>
+        // Service options for each category
+        const serviceOptions = {
+            'design-printing': [
+                'Custom T-shirt Printing',
+                'Business Cards Design & Print',
+                'Posters & Banners',
+                'Flyers & Brochures',
+                'Logo Design & Branding',
+                'Vinyl Printing & Cutting',
+                'Stickers & Labels',
+                'Other Design & Printing'
+            ],
+            'government-services': [
+                'KRA PIN Registration',
+                'HELB Application',
+                'TSC Registration',
+                'TIMS Tax Registration',
+                'eCitizen Services',
+                'Passport Application Support',
+                'Good Conduct Certificate',
+                'Other Government Service'
+            ],
+            'ict-academic': [
+                'KUCCPS University Application',
+                'CV Writing & Formatting',
+                'Cover Letter Creation',
+                'Plagiarism Detection',
+                'Research Paper Formatting',
+                'PowerPoint Presentations',
+                'Online Course Registration',
+                'Other ICT/Academic Service'
+            ],
+            'technical-repair': [
+                'PC & Laptop Repair',
+                'Software Installation',
+                'Virus Removal',
+                'Phone Repair',
+                'Printer Repair',
+                'Network Setup',
+                'Data Recovery',
+                'Other Technical Service'
+            ],
+            'digital-services': [
+                'Passport Photography',
+                'Document Scanning',
+                'Photo Printing',
+                'Photo Editing',
+                'CD/DVD Burning',
+                'PDF Creation',
+                'Digital File Organization',
+                'Other Digital Service'
+            ],
+            'cyber-services': [
+                'Professional Typing',
+                'Proofreading & Editing',
+                'Online Account Creation',
+                'Social Media Setup',
+                'Email Marketing',
+                'Data Entry',
+                'Content Writing',
+                'Other Cyber Service'
+            ]
+        };
+
+        // Update specific service options based on category selection
+        document.getElementById('service-category').addEventListener('change', function() {
+            const category = this.value;
+            const specificServiceSelect = document.getElementById('specific-service');
+            const specificServiceGroup = document.getElementById('specific-service-group');
+            
+            if (category && serviceOptions[category]) {
+                // Show the specific service group
+                specificServiceGroup.style.display = 'block';
+                
+                // Clear existing options
+                specificServiceSelect.innerHTML = '<option value="">Select specific service</option>';
+                
+                // Add new options
+                serviceOptions[category].forEach(service => {
+                    const option = document.createElement('option');
+                    option.value = service.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = service;
+                    specificServiceSelect.appendChild(option);
+                });
+                
+                // Make it required
+                specificServiceSelect.setAttribute('required', '');
+            } else {
+                // Hide the specific service group
+                specificServiceGroup.style.display = 'none';
+                specificServiceSelect.removeAttribute('required');
+            }
+        });
+
+        // Price calculator functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const calcService = document.getElementById('calc-service');
+            const calcQuantity = document.getElementById('calc-quantity');
+            const estimatedPrice = document.getElementById('estimated-price');
+            
+            function updatePrice() {
+                const selectedOption = calcService.options[calcService.selectedIndex];
+                const basePrice = parseFloat(selectedOption.getAttribute('data-price')) || 0;
+                const quantity = parseInt(calcQuantity.value) || 1;
+                const total = basePrice * quantity;
+                
+                estimatedPrice.textContent = total > 0 ? `KSh ${total.toLocaleString()}` : 'KSh 0';
+            }
+            
+            calcService.addEventListener('change', updatePrice);
+            calcQuantity.addEventListener('input', updatePrice);
+        });
+
+        // Set minimum date to today
+        document.getElementById('deadline').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>

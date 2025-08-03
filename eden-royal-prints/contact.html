@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Eden Royal Prints and Color Solutions. Get in touch for printing, digital services, ICT solutions, and government services in Kenya.">
+    <meta name="keywords" content="contact eden royal prints, printing services contact, nairobi printing contact, digital services contact kenya">
+    <meta name="author" content="Eden Royal Prints and Color Solutions">
+    
+    <title>Contact Us - Eden Royal Prints and Color Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ER</div>
+                Eden Royal Prints
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="order.html" class="btn btn-primary">Order Now</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1>Get In <span style="color: var(--gold);">Touch</span></h1>
+                <p class="hero-tagline">Ready to bring your project to life? Contact us today for expert consultation and royal quality service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-8 fade-in-up">
+                <h2>Contact Information</h2>
+                <p class="text-gray-600">Multiple ways to reach us for your convenience</p>
+            </div>
+            
+            <div class="grid grid-4 fade-in-up">
+                <div class="card text-center">
+                    <div class="card-icon mx-auto">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2">Visit Our Office</h4>
+                    <p class="text-gray-600">Sample Street, Nairobi<br>Kenya</p>
+                    <a href="#map" class="btn btn-secondary mt-3">View on Map</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon mx-auto">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2">Call Us</h4>
+                    <p class="text-gray-600">+254 700 000 000<br>Available during business hours</p>
+                    <a href="tel:+254700000000" class="btn btn-secondary mt-3">Call Now</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon mx-auto">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2">Email Us</h4>
+                    <p class="text-gray-600">info@edenroyalprints.co.ke<br>We reply within 2 hours</p>
+                    <a href="mailto:info@edenroyalprints.co.ke" class="btn btn-secondary mt-3">Send Email</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon mx-auto">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2">WhatsApp</h4>
+                    <p class="text-gray-600">+254 700 000 000<br>Quick responses 24/7</p>
+                    <a href="https://wa.me/254700000000" class="btn btn-secondary mt-3">Chat Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Business Hours -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="grid grid-2 gap-8">
+                <!-- Contact Form -->
+                <div class="fade-in-up">
+                    <h3 class="mb-6">Send Us a Message</h3>
+                    <form id="contact-form" class="card">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="printing">Printing Services</option>
+                                <option value="government">Government Services</option>
+                                <option value="ict">ICT & Academic Services</option>
+                                <option value="technical">Technical & Repair</option>
+                                <option value="digital">Digital Services</option>
+                                <option value="cyber">Cyber Services</option>
+                                <option value="quote">Request Quote</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your project or question..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-full" data-original-text="Send Message">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Business Information -->
+                <div class="fade-in-up">
+                    <h3 class="mb-6">Business Hours</h3>
+                    <div class="card mb-6">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="card-icon" style="margin-bottom: 0;">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Operating Hours</h4>
+                                <p class="text-gray-600">We're here to serve you</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                                <span class="font-semibold">Monday - Friday</span>
+                                <span class="text-royal-blue">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                                <span class="font-semibold">Saturday</span>
+                                <span class="text-royal-blue">9:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2">
+                                <span class="font-semibold">Sunday</span>
+                                <span class="text-gray-500">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 class="mb-4">Why Choose Us?</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-gold mt-1"></i>
+                                <div>
+                                    <strong>Quick Response:</strong> We respond to all inquiries within 2 hours during business hours
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-gold mt-1"></i>
+                                <div>
+                                    <strong>Free Consultation:</strong> Get expert advice for your project at no cost
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-gold mt-1"></i>
+                                <div>
+                                    <strong>Transparent Pricing:</strong> Clear, upfront pricing with no hidden fees
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-gold mt-1"></i>
+                                <div>
+                                    <strong>Quality Guarantee:</strong> 100% satisfaction guarantee on all our services
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="section">
+        <div class="container">
+            <div class="text-center mb-8 fade-in-up">
+                <h2>Find Us Here</h2>
+                <p class="text-gray-600">Located in the heart of Nairobi for easy access</p>
+            </div>
+            
+            <div class="fade-in-up">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8190818214915!2d36.8172449!3d-1.2884017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d22c8c0000%3A0x0!2zMcKwMTcnMTguMjUiUyAzNsKwNDknMDIuMSJF!5e0!3m2!1sen!2ske!4v1234567890!5m2!1sen!2ske"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="grid grid-3 gap-6 mt-8">
+                    <div class="text-center">
+                        <i class="fas fa-car text-royal-blue text-2xl mb-2"></i>
+                        <h5 class="mb-2">Parking Available</h5>
+                        <p class="text-gray-600 text-sm">Free parking for our customers</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-bus text-royal-blue text-2xl mb-2"></i>
+                        <h5 class="mb-2">Public Transport</h5>
+                        <p class="text-gray-600 text-sm">Easily accessible by matatu and bus</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-wheelchair text-royal-blue text-2xl mb-2"></i>
+                        <h5 class="mb-2">Accessible</h5>
+                        <p class="text-gray-600 text-sm">Wheelchair accessible entrance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="text-center mb-8 fade-in-up">
+                <h2>Frequently Asked Questions</h2>
+                <p class="text-gray-600">Quick answers to common questions</p>
+            </div>
+            
+            <div class="grid grid-2 gap-6 fade-in-up">
+                <div class="card">
+                    <h5 class="mb-3">How quickly can you complete my order?</h5>
+                    <p class="text-gray-600">Most orders are completed within 24-48 hours. Rush orders can often be accommodated with same-day service for an additional fee.</p>
+                </div>
+                
+                <div class="card">
+                    <h5 class="mb-3">Do you offer design services?</h5>
+                    <p class="text-gray-600">Yes! Our creative team can help design your project from scratch or work with your existing ideas to create something amazing.</p>
+                </div>
+                
+                <div class="card">
+                    <h5 class="mb-3">What payment methods do you accept?</h5>
+                    <p class="text-gray-600">We accept cash, M-Pesa, bank transfers, and major credit cards. Payment terms can be discussed for larger orders.</p>
+                </div>
+                
+                <div class="card">
+                    <h5 class="mb-3">Can you handle large quantity orders?</h5>
+                    <p class="text-gray-600">Absolutely! We have experience handling orders from single items to thousands of units. Contact us for volume pricing.</p>
+                </div>
+                
+                <div class="card">
+                    <h5 class="mb-3">Do you provide delivery services?</h5>
+                    <p class="text-gray-600">Yes, we offer delivery within Nairobi and surrounding areas. Delivery fees apply based on location and order size.</p>
+                </div>
+                
+                <div class="card">
+                    <h5 class="mb-3">What if I'm not satisfied with my order?</h5>
+                    <p class="text-gray-600">We guarantee 100% satisfaction. If you're not happy with the results, we'll work with you to make it right or provide a refund.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: linear-gradient(135deg, var(--royal-blue), var(--royal-blue-dark));">
+        <div class="container text-center">
+            <div class="fade-in-up" style="color: white;">
+                <h2 style="color: white; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">
+                    Don't wait! Contact us today and experience the royal treatment with your next printing or digital project.
+                </p>
+                
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="order.html" class="btn btn-primary btn-lg">Place Your Order</a>
+                    <a href="tel:+254700000000" class="btn btn-white btn-lg">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eden Royal Prints</h3>
+                    <p>Your premier partner for printing, digital services, and ICT solutions in Kenya. Quality you can trust, service you can rely on.</p>
+                    
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="order.html">Order Now</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="services.html#design-printing">T-shirt Printing</a>
+                        <a href="services.html#design-printing">Business Cards</a>
+                        <a href="services.html#government-cyber">eCitizen Services</a>
+                        <a href="services.html#ict-digital">Online Applications</a>
+                        <a href="services.html#technical-repair">PC Repairs</a>
+                        <a href="services.html#digital-services">Digital Photography</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--gold);"></i>
+                            <span>Sample Street, Nairobi, Kenya</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-phone" style="color: var(--gold);"></i>
+                            <span>+254 700 000 000</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope" style="color: var(--gold);"></i>
+                            <span>info@edenroyalprints.co.ke</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-clock" style="color: var(--gold);"></i>
+                            <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eden Royal Prints and Color Solutions. All rights reserved. | Designed with ❤️ for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-btn" data-phone="254700000000" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
