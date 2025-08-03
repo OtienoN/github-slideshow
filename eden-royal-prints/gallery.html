@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of completed projects. T-shirt printing, business cards, posters, branding, and digital services showcase from Eden Royal Prints.">
+    <meta name="keywords" content="printing portfolio, T-shirt printing gallery, business cards samples, printing projects Kenya, branding portfolio">
+    <meta name="author" content="Eden Royal Prints and Color Solutions">
+    
+    <title>Gallery - Eden Royal Prints and Color Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ER</div>
+                Eden Royal Prints
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn btn-primary">Order Now</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1>Our <span style="color: var(--gold);">Project Gallery</span></h1>
+                <p class="hero-tagline">Discover the quality and creativity that sets Eden Royal Prints apart</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="section-small" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="text-center fade-in-up">
+                <h2 class="mb-6">Project Categories</h2>
+                <div class="flex flex-wrap justify-center gap-4" id="gallery-filters">
+                    <button class="btn btn-secondary active" data-filter="all">All Projects</button>
+                    <button class="btn btn-secondary" data-filter="printing">Printing</button>
+                    <button class="btn btn-secondary" data-filter="tshirts">T-Shirts</button>
+                    <button class="btn btn-secondary" data-filter="business">Business Cards</button>
+                    <button class="btn btn-secondary" data-filter="branding">Branding</button>
+                    <button class="btn btn-secondary" data-filter="digital">Digital</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid fade-in-up" id="gallery-container">
+                <!-- T-Shirt Printing Projects -->
+                <div class="gallery-item" data-category="tshirts">
+                    <img src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?w=400&h=400&fit=crop&crop=center" alt="Custom T-shirt printing - Event merchandise">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="tshirts">
+                    <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=400&h=400&fit=crop&crop=center" alt="Corporate T-shirt branding">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="tshirts">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=400&fit=crop&crop=center" alt="Custom design T-shirt printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- Business Cards -->
+                <div class="gallery-item" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1586953207917-9d6edced4042?w=400&h=400&fit=crop&crop=center" alt="Professional business card design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1560264357-8d9202250f21?w=400&h=400&fit=crop&crop=center" alt="Creative business card layout">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop&crop=center" alt="Luxury business card printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- Printing Projects -->
+                <div class="gallery-item" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=400&fit=crop&crop=center" alt="Poster printing and design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1586281380923-c4ebc27c2b46?w=400&h=400&fit=crop&crop=center" alt="Flyer and brochure printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=center" alt="Professional documentation printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- Branding Projects -->
+                <div class="gallery-item" data-category="branding">
+                    <img src="https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?w=400&h=400&fit=crop&crop=center" alt="Vinyl branding and signage">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="branding">
+                    <img src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7d?w=400&h=400&fit=crop&crop=center" alt="Logo design and branding">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="branding">
+                    <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&h=400&fit=crop&crop=center" alt="Corporate branding materials">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- Digital Services -->
+                <div class="gallery-item" data-category="digital">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=400&fit=crop&crop=center" alt="Digital photography services">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="digital">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=400&fit=crop&crop=center" alt="Document scanning and digitization">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="digital">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop&crop=center" alt="Digital file management">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- Additional Projects -->
+                <div class="gallery-item" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=400&h=400&fit=crop&crop=center" alt="Menu printing and design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="branding">
+                    <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&h=400&fit=crop&crop=center" alt="Sticker and label printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="tshirts">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&crop=center" alt="Custom team jerseys">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop&crop=center" alt="Letterhead design and printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=400&fit=crop&crop=center" alt="Banner and signage printing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="digital">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=400&fit=crop&crop=center" alt="Passport photo services">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Highlights -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="text-center mb-8 fade-in-up">
+                <h2>Featured Projects</h2>
+                <p class="text-gray-600">Some of our most successful client projects</p>
+            </div>
+            
+            <div class="grid grid-3 fade-in-up">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="Event T-shirt printing project" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="mb-2">Corporate Event T-Shirts</h4>
+                    <p class="text-gray-600 mb-4">500 custom printed T-shirts for a major corporate event, delivered in 48 hours with perfect quality and branding.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-royal-blue font-semibold">500 Units</span>
+                        <span class="text-gray-500 text-sm">2 Days</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop" alt="Business branding package" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="mb-2">Complete Business Branding</h4>
+                    <p class="text-gray-600 mb-4">Full branding package including business cards, letterheads, stickers, and vinyl signage for a new restaurant.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-royal-blue font-semibold">Full Package</span>
+                        <span class="text-gray-500 text-sm">1 Week</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="University application assistance" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="mb-2">University Applications</h4>
+                    <p class="text-gray-600 mb-4">Helped 50+ students with KUCCPS applications, CV writing, and document preparation for university admissions.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-royal-blue font-semibold">50+ Students</span>
+                        <span class="text-gray-500 text-sm">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-8 fade-in-up">
+                <h2>Behind the Scenes</h2>
+                <p class="text-gray-600">See our process and commitment to quality</p>
+            </div>
+            
+            <div class="grid grid-2 gap-8 items-center">
+                <div class="fade-in-up">
+                    <div style="background: var(--gray-200); border-radius: 1rem; height: 300px; display: flex; align-items: center; justify-content: center; position: relative;">
+                        <i class="fas fa-play-circle" style="font-size: 4rem; color: var(--royal-blue); cursor: pointer;"></i>
+                        <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem; background: rgba(0,0,0,0.7); color: white; padding: 0.5rem; border-radius: 0.5rem; text-align: center;">
+                            Our Printing Process - Quality in Action
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up">
+                    <h3 class="mb-4">Experience Our Process</h3>
+                    <p class="mb-4">From initial consultation to final delivery, see how we ensure every project meets our royal standards. Our state-of-the-art equipment and skilled team work together to bring your vision to life.</p>
+                    
+                    <ul class="mb-6">
+                        <li class="flex items-center gap-3 mb-2">
+                            <i class="fas fa-check-circle text-gold"></i>
+                            <span>Professional consultation and design</span>
+                        </li>
+                        <li class="flex items-center gap-3 mb-2">
+                            <i class="fas fa-check-circle text-gold"></i>
+                            <span>High-quality material selection</span>
+                        </li>
+                        <li class="flex items-center gap-3 mb-2">
+                            <i class="fas fa-check-circle text-gold"></i>
+                            <span>Precision printing and finishing</span>
+                        </li>
+                        <li class="flex items-center gap-3 mb-2">
+                            <i class="fas fa-check-circle text-gold"></i>
+                            <span>Quality control and delivery</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="order.html" class="btn btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: linear-gradient(135deg, var(--royal-blue), var(--royal-blue-dark));">
+        <div class="container text-center">
+            <div class="fade-in-up" style="color: white;">
+                <h2 style="color: white; margin-bottom: 1rem;">Ready to Create Your Next Project?</h2>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">
+                    Join our gallery of satisfied customers and let us bring your vision to life with royal quality.
+                </p>
+                
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="order.html" class="btn btn-primary btn-lg">Start Your Order</a>
+                    <a href="contact.html" class="btn btn-white btn-lg">Discuss Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eden Royal Prints</h3>
+                    <p>Your premier partner for printing, digital services, and ICT solutions in Kenya. Quality you can trust, service you can rely on.</p>
+                    
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--gold); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="order.html">Order Now</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="services.html#design-printing">T-shirt Printing</a>
+                        <a href="services.html#design-printing">Business Cards</a>
+                        <a href="services.html#government-cyber">eCitizen Services</a>
+                        <a href="services.html#ict-digital">Online Applications</a>
+                        <a href="services.html#technical-repair">PC Repairs</a>
+                        <a href="services.html#digital-services">Digital Photography</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--gold);"></i>
+                            <span>Sample Street, Nairobi, Kenya</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-phone" style="color: var(--gold);"></i>
+                            <span>+254 700 000 000</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope" style="color: var(--gold);"></i>
+                            <span>info@edenroyalprints.co.ke</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-clock" style="color: var(--gold);"></i>
+                            <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eden Royal Prints and Color Solutions. All rights reserved. | Designed with ❤️ for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-btn" data-phone="254700000000" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Gallery Filter Script -->
+    <script>
+        // Gallery filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('#gallery-filters button');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                            item.style.opacity = '1';
+                        } else {
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
